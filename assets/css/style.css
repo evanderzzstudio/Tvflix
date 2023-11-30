@@ -32,6 +32,22 @@
   /* gradient */
   --banner-overlay: 90deg, hsl(220, 17%, 7%) 0%, hsla(220, 17%, 7%, 0.5) 100%;
   --bottom-overlay: 180deg, hsla(250, 13%, 11%, 0), hsla(250, 13%, 11%, 1);
+  /* typography */
+
+  /* font family */
+  --ff-dm-sans: 'DM Sans', sans-serif;
+
+  /* font size */
+  --fs-heading: 4rem;
+  --fs-title-lg: 2.6rem;
+  --fs-title: 2rem;
+  --fs-body: 1.8rem;
+  --fs-button: 1.5rem;
+  --fs-label: 1.4rem;
+
+  /* font weight */
+  --weight-bold: 700;
+
 }
 
 
