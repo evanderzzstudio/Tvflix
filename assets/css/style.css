@@ -101,8 +101,46 @@ img {
   height: auto;
 }
 
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
 
+input {
+  width: 100%;
+}
 
+button {
+  text-align: left;
+  cursor: pointer;
+}
+
+html {
+  font-family: var(--ff-dm-sans);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-background);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  height: 300vh;
+  width: 200vh;
+}
+
+:focus-visible {
+  outline-color: var(--primary-variant);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
 /*-----------------------------------*\
   #REUSED STYLE
