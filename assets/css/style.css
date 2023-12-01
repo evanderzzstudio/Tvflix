@@ -160,6 +160,13 @@ body {
   #HEADER
 \*-----------------------------------*/
 
+.header {
+  position: relative;
+  padding-block: 24px;
+  padding-inline: 16px;
+}
+
+
 
 
 
