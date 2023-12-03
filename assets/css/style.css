@@ -190,16 +190,22 @@ body {
 
 .search-btn img {
   opacity: 0.5;
+  transition: var(--transition-short);
 }
 
 .search-btn:is(:hover, :focus-visible) img {
   opacity: 1;
 }
 
+.menu-btn.active .menu,
+.menu-btn .close {
+  display: none;
+}
 
-
-
-
+.menu-btn .menu,
+.menu-btn .close {
+  display: block;
+}
 
 /*-----------------------------------*\
   #SIDEBAR
