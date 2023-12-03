@@ -188,6 +188,14 @@ body {
   border-radius: var(--radius-8);
 }
 
+.search-btn img {
+  opacity: 0.5;
+}
+
+.search-btn:is(:hover, :focus-visible) img {
+  opacity: 1;
+}
+
 
 
 
