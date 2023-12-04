@@ -160,9 +160,7 @@ body {
   #HEADER
 \*-----------------------------------*/
 
-.search-box {
-  display: none;
-}
+
 
 .header {
   position: relative;
@@ -186,6 +184,7 @@ body {
 .search-btn {
   background-color: var(--banner-background);
   border-radius: var(--radius-8);
+  opacity: 0.5;
 }
 
 .search-btn img {
@@ -203,8 +202,12 @@ body {
 }
 
 .menu-btn .menu,
-.menu-btn .close {
+.menu-btn.active .close {
   display: block;
+}
+
+.search-box {
+  display: none;
 }
 
 /*-----------------------------------*\
