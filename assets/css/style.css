@@ -377,6 +377,12 @@ body {
   transition: var(--transition-short);
   z-index: 3;
 }
+
+.overlay.active{
+  opacity: 0.5;
+  pointer-events: all;
+}
+
 /*-----------------------------------*\
   #HOME PAGE
 \*-----------------------------------*/
