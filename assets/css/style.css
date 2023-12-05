@@ -6,10 +6,6 @@
  * copyright 2023 codewithsadee
  */
 
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -35,7 +31,7 @@
   /* typography */
 
   /* font family */
-  --ff-dm-sans: 'DM Sans', sans-serif;
+  --ff-dm-sans: "DM Sans", sans-serif;
 
   /* font size */
   --fs-heading: 4rem;
@@ -63,10 +59,7 @@
   /* transition */
   --transition-short: 250ms ease;
   --transition-long: 500ms ease;
-
 }
-
-
 
 /*-----------------------------------*\
   #RESET
@@ -142,7 +135,6 @@ body {
   height: 8px;
 }
 
-
 ::-webkit-scrollbar-thumb {
   background-color: var(--banner-background);
   border-radius: var(--radius-8);
@@ -180,14 +172,15 @@ body {
   }
 }
 
-
-
+.title {
+  font-size: var(--fs-title);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.5px;
+}
 
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
-
-
 
 .header {
   position: relative;
@@ -248,13 +241,12 @@ body {
 }
 
 .search-box.active {
-  display: flex
+  display: flex;
 }
 
 .search-wrapper {
   position: relative;
   flex-grow: ;
-
 }
 
 .search-field {
@@ -297,41 +289,55 @@ body {
   #SIDEBAR
 \*-----------------------------------*/
 
+.sidebar {
+  position: absolute;
+  background-color: var(--background);
+  top: 96px;
+  bottom: 0;
+  left: -340px;
+  max-width: 340px;
+  width: 100%;
+  border-block-start: 1px solid var(--banner-background);
+  overflow-y: overlay;
+  z-index: 4;
+  visibility: hidden;
+  transition: var(--transition-long);
+}
 
+.sidebar.active {
+  transform: translateX(340px);
+  visibility: visible;
+}
 
+.sidebar-inner {
+  display: grid;
+  gap: 20px;
+  padding-block: 36px;
+}
 
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.sidebar:is(:hover, :focus-within)::-webkit-scrollbar-thumb{
+  background-color: var(--banner-background);
+}
 
 /*-----------------------------------*\
   #HOME PAGE
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #DETAIL PAGE
 \*-----------------------------------*/
-
-
-
-
 
 /*-----------------------------------*\
   #MOVIE LIST PAGE
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #SEARCH MODAL
 \*-----------------------------------*/
-
-
-
-
 
 /*-----------------------------------*\
   #MEDIA QUERIES
