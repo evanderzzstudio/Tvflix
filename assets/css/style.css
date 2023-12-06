@@ -505,6 +505,11 @@ body {
   margin-block-end: 16px;
 }
 
+.meta-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*-----------------------------------*\
   #DETAIL PAGE
 \*-----------------------------------*/
