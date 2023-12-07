@@ -532,6 +532,17 @@ body {
 .banner .btn { background-color: var(--primary);}
 .banner .btn:is(:hover, :focus-visible) {box-shadow: var(--shadow-2);}
 
+.slider-control{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 0;
+  border-radius: var(--radius-16) 0 0 var(--radius-16) ;
+  user-select: none;
+  padding: 4px 0 4px 4px;
+  overflow-x: auto;
+}
+
 
 /*-----------------------------------*\
   #DETAIL PAGE
