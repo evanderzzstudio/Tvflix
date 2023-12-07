@@ -543,6 +543,25 @@ body {
   overflow-x: auto;
 }
 
+.slider-control::-webkit-scrollbar{display: none;}
+
+.control-inner{
+  display: flex;
+  gap: 12px;
+}
+
+.control-inner::after{
+  content:"";
+  min-width: 12px;
+}
+
+.slider-control .slider-item{
+  width: 100px;
+  border-radius: var(--radius-8);
+  flex-shrink: 0;
+  filter: brightness(0.4);
+}
+
 
 /*-----------------------------------*\
   #DETAIL PAGE
