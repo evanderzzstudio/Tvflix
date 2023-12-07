@@ -251,6 +251,8 @@ body {
   margin-block-end: -16px;
 }
 
+.slider-list::-webkit-scrollbar-thumb{ background-color: transparent;}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
