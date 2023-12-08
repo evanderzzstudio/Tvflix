@@ -285,6 +285,20 @@ body {
   min-width: 4px;
 }
 
+.separator {
+  width: 4px;
+  height: 4px;
+  background-color: var(--white-alpha-20);
+  border-radius: var(--radius-8);
+}
+
+.video-card {
+  background-image: url("/assets/images/video-bg-icon.png");
+  aspect-ratio: 16/9;
+  flex-shrink: 0;
+  max-width: 500px;
+  width: calc(100% - 40px);
+}
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -703,19 +717,19 @@ body {
   margin-block: 24px 32px;
 }
 
-.movie-detail .list-item{
+.movie-detail .list-item {
   display: flex;
   align-items: flex-start;
   gap: 8px;
   margin-block-end: 12px;
-} 
+}
 
 .movie-detail .list-name {
   color: var(--text-color);
   min-width: 112px;
 }
-  
-  /*-----------------------------------*\
+
+/*-----------------------------------*\
   #MOVIE LIST PAGE
 \*-----------------------------------*/
 
